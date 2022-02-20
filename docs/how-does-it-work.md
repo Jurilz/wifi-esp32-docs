@@ -2,7 +2,7 @@ Communication
 
 These section describes the communication process between the [ESP32WifiConfigurator.h](esp32-wifi-configurator.md) library and the [WiFi Configurator](wifi-esp32-configurator-app.md) application.
 
-## Conncetion Setup
+## Connection Setup
 
 The ESP32 controller uses the [ESP32WifiConfigurator.h](esp32-wifi-configurator.md) library in his `setup()` method to check, whether the microcontroller is connected to a WiFi network. When no WiFi conncetion is present it setups a BLE Server. This server advertises a BLE Service, which the [WiFi Configurator](wifi-esp32-configurator-app.md) application is scanning for. The application can establish a BLE conncetion to the found Device (ESP32).
 
