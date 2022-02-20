@@ -1,7 +1,7 @@
 site_name: WiFi Configuration for ESP32 Controller
 
 nav:
-  - Getting started: index.md
+  - Overview: index.md
   - How does it work?: how-does-it-work.md
   - ESP32 WiFi Configuration Libraray: esp32-wifi-configurator.md
   - WiFi ESP32 Configurato App: wifi-esp32-configurator-app.md
