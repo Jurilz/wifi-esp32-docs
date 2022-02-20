@@ -1,6 +1,6 @@
 # Overview
 
-This project is a combination of a ESP32 Libraray ([ESP32WifiConfigurator.h](esp32-wifi-configurator.md)) and a Flutter Mobile Application ([WiFi ESP32 Configurator App](wifi-esp32-configurator-app.md)). It allows to set WiFi credentials for an ESP32 controller via a BLE connection.
+This project is a combination of a ESP32 Libraray ([ESP32WifiConfigurator.h](esp32-wifi-configurator.md)) and a Flutter Mobile Application ([WiFi ESP32 Configurator App](wifi-esp32-configurator-app.md)). It allows to set WiFi credentials for an ESP32 controller via a Mobile App.
 
 ## Repositories
 
