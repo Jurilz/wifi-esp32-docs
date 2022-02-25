@@ -33,3 +33,12 @@ To close the connection for both sides in a controlled way two messages are exch
 <a href="https://www.flaticon.com/free-icons/microcontroller" title="microcontroller icons">Microcontroller icon created by Eucalyp - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/smartphone" title="smartphone icons">Smartphone icon created by Good Ware - Flaticon</a>
+
+<!-- <a href="https://www.flaticon.com/free-icons/wifi" title="wifi icons">Wifi icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/bluetooth" title="bluetooth icons">Bluetooth icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/bluetooth" title="bluetooth icons">Bluetooth icons created by Smashicons - Flaticon</a> -->
+
+
+

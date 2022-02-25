@@ -1,8 +1,8 @@
-# WiFi ESP32 Configurator App
+# WiFi Configurator App for ESP32 Controller
 
 This Flutter Application allows you to set WiFi credentials on an ESP32 controller via a BLE connection.
 
-It was developed to be used in combination with the [ESP32WifiConfigurator.h](esp32-wifi-configurator.md) Library for ESP32 Controller, although it can be used with any BLE Server, which implements the API.
+It was developed to be used in combination with the [ESP32 WiFi Configuration](https://github.com/Jurilz/esp32_wifi_lib) Library for ESP32 Controller, although it can be used with any BLE Server, which implements the API.
 
 ## API
 
@@ -29,6 +29,10 @@ It then writes a `CLOSED` message to these Characteristics and disconnects from 
 
  The App writes the WiFi name (SSID) and the password seperated by a newline character (`\n`) and encoded as a byte array to these Characteritics.
 
+ ## Android SDK version
+
+The minimum SKD Version is 19 due to compatibility of the [Flutter Blue](https://pub.dev/packages/flutter_blue) Plugin. 
+
 ## Permisions
 
 As the [Flutter Blue](https://pub.dev/packages/flutter_blue) Plugin is used for BLE communication following permissions are needed:
@@ -49,7 +53,8 @@ For more information refer to the [Flutter Blue](https://pub.dev/documentation/f
 
 ## Used Dependencies
 
-* [Flutter Blue (0.8.8)](https://pub.dev/packages/flutter_blue) Copyright 2017 Paul DeMarco. All rights reserved. [Licence BSD-3-Clause](https://pub.dev/packages/flutter_blue/license)
+* [Flutter Blue (0.8.8)](https://pub.dev/packages/flutter_blue) 
+Copyright 2017 Paul DeMarco. All rights reserved. [Licence BSD-3-Clause](https://pub.dev/packages/flutter_blue/license)
 
 ## Licence
 Apache License 2.0 (Apache-2.0)
