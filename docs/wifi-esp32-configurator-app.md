@@ -29,7 +29,7 @@ It then writes a `CLOSED` message to these Characteristics and disconnects from 
 
  The App writes the WiFi name (SSID) and the password seperated by a newline character (`\n`) and encoded as a byte array to these Characteritics.
 
- ## Android SDK version
+## Android SDK version
 
 The minimum SKD Version is 19 due to compatibility of the [Flutter Blue](https://pub.dev/packages/flutter_blue) Plugin. 
 
