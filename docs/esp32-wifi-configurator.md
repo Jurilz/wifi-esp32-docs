@@ -40,7 +40,6 @@ They expect the WiFi name (SSID) and the password seperated by a newline charact
 
 On succes a notification (SUCCESS) is written to the *Available Networks Characteristics*.
 
-
 ## General Information
 
 For development an ESP-Wroom-32 Controller was used.
@@ -60,4 +59,4 @@ The applied partion scheme was: `Huge App (3MB NO OTA/1MB SPIFFS)`.
 
 
 ## Licence
-GNU General Public License v3 (GPL-3)
+Apache License 2.0 (Apache-2.0)
