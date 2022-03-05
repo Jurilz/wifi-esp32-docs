@@ -1,10 +1,12 @@
-# ESP32 WiFi Configuration Library
+# ESP32 WiFi Configuration Lib
 
 This Library enables you to set WiFi credentials for an ESP32 Controller via a BLE connection. After an WiFi connection is established the BLE server is shut down.
 
 It also scans the available WiFi networks and publishes them via the Available Network Characteristics.
 
 ## Usage
+
+To pass WiFi credentials and connect to a WiFi network, when no connection is currently presen, can be done like this:
 
 ```c++
 #include "ESP32WifiConfigurator.h"
@@ -16,6 +18,23 @@ void setup()
   wifiConfigurator.startWifiConfigurator();
 }
 ```
+
+The ESP32WiFiConfigurator can also be used to disconnect from a currently connected WiFi network and pass WiFi credentials for another WiFi network like this:
+
+
+```c++
+#include "ESP32WifiConfigurator.h"
+
+ESP32WifiConfigurator wifiConfigurator("myBLEDevice");
+
+
+  ...
+  wifiConfigurator.restartWifiConfigurator();
+  ...
+
+```
+
+Both methods can alos be used together.
 
 ## API
 
@@ -40,6 +59,7 @@ They expect the WiFi name (SSID) and the password seperated by a newline charact
 
 On succes a notification (SUCCESS) is written to the *Available Networks Characteristics*.
 
+
 ## General Information
 
 For development an ESP-Wroom-32 Controller was used.
@@ -47,6 +67,10 @@ For development an ESP-Wroom-32 Controller was used.
 The memory consumption is about 1.3 MB mostly due to usage of `WiFI.h` (0.5 MB) and `BLEDevice.h` (0.8 MB) libraries.
 
 The applied partion scheme was: `Huge App (3MB NO OTA/1MB SPIFFS)`.
+
+### Board
+For development the ESP32 Dev Module board was used in the version v1.0.4. The v1.0.6 has some known [problems](https://github.com/espressif/arduino-esp32/issues/5164) with re-connection of BLE Clients to the BLE Server in combination with using Windows 10.
+
 
 ## Used Dependencies
 
@@ -56,6 +80,10 @@ The applied partion scheme was: `Huge App (3MB NO OTA/1MB SPIFFS)`.
 * BLEServer.h
 * BLE2902.h
 * WiFi.h
+
+## Documentation
+
+More information can be found [here](https://jurilz.github.io/wifi-esp32-docs/).
 
 
 ## Licence
