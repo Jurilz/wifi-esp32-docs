@@ -20,7 +20,7 @@ The [ESP32WifiConfigurator.h](esp32-wifi-configurator.md) library also scans for
 ## Shutdown choreographie
 To close the connection for both sides in a controlled way two messages are exchanged between the microcontroller and the application.
 
-1. On a successfull established WiFi connection the message "SUCCESS" is writen to the *General Communication Characteristics* by the microcontroller
+1. On a successfull established WiFi connection the message "SUCCESS" is writen to the *Available Networks Communication Characteristics* by the microcontroller
 2. On Reading the "SUCCESS" message the application writes the message "CLOSED" to the same characteristics and disconnects from the BLE connection.
 3. On Reading the "CLOSED" message the microcontroller shuts down the BLE server closing all BLE connections.
 
